@@ -45,12 +45,8 @@ class Fornecedor {
         if (Object.keys(dadosParaAtualizar).length === 0) {
             throw new Error('Não há dados para atualizar')
         }
-
         await TabelaFornecedor.atualizar(this.id, dadosParaAtualizar)
-
     }
-
 }
-
 
 module.exports = Fornecedor;
